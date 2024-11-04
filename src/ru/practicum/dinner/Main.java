@@ -57,7 +57,7 @@ public class Main {
         ArrayList<String> listOfTypesOfDishes = new ArrayList<>();
 
         while (!nextItem.isEmpty()) {
-            if (dc.isTypeDishesInHashMap(nextItem)) {
+            if (dc.existsDish(nextItem)) {
                 listOfTypesOfDishes.add(nextItem);
             } else {
                 System.out.println("Такого типа блюда нет, попробуйте ввести другой:");
